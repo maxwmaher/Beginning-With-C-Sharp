@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "BeginningCSharp/1.0.0": {
+        "runtime": {
+          "BeginningCSharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BeginningCSharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

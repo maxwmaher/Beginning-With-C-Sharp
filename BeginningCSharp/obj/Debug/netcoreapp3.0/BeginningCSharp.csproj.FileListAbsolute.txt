@@ -1,0 +1,11 @@
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/bin/Debug/netcoreapp3.0/BeginningCSharp
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/bin/Debug/netcoreapp3.0/BeginningCSharp.deps.json
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/bin/Debug/netcoreapp3.0/BeginningCSharp.runtimeconfig.json
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/bin/Debug/netcoreapp3.0/BeginningCSharp.runtimeconfig.dev.json
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/bin/Debug/netcoreapp3.0/BeginningCSharp.dll
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/bin/Debug/netcoreapp3.0/BeginningCSharp.pdb
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/obj/Debug/netcoreapp3.0/BeginningCSharp.csprojAssemblyReference.cache
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/obj/Debug/netcoreapp3.0/BeginningCSharp.AssemblyInfoInputs.cache
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/obj/Debug/netcoreapp3.0/BeginningCSharp.AssemblyInfo.cs
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/obj/Debug/netcoreapp3.0/BeginningCSharp.dll
+/Users/maxmaher/Documents/Professional-Development/C-Sharp/BeginningCSharp/BeginningCSharp/obj/Debug/netcoreapp3.0/BeginningCSharp.pdb
