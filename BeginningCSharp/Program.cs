@@ -51,27 +51,40 @@ namespace BeginningCSharp
 
             //WORKING WITH NUMBERS
 
-            Console.WriteLine(5 + 8); //Returns sum
-            Console.WriteLine(5 - 8); //Returns difference
-            Console.WriteLine(5 * 8); //Returns product
-            Console.WriteLine(40 / 5); //Returns quotient
-            Console.WriteLine(40 % 5); //Modulus operator.  Returns remainder
-            Console.WriteLine(4 + 2 * 3); //Order of operations applies.  3*2 will be performed first, then 4 will be added to get 10.
-            Console.WriteLine((4 + 2) * 3); //Now the inner parentheses will process first (4+2), times 3 to get 18.
-            Console.WriteLine(5 / 2); //We would expect 2.5 normally, but in C#, when only integer values are provided, an integer is returned.  Returns 2.
-            Console.WriteLine(5 / 2.0); //2.0 is considered a double.  This returns 2.5.
+            //Console.WriteLine(5 + 8); //Returns sum
+            //Console.WriteLine(5 - 8); //Returns difference
+            //Console.WriteLine(5 * 8); //Returns product
+            //Console.WriteLine(40 / 5); //Returns quotient
+            //Console.WriteLine(40 % 5); //Modulus operator.  Returns remainder
+            //Console.WriteLine(4 + 2 * 3); //Order of operations applies.  3*2 will be performed first, then 4 will be added to get 10.
+            //Console.WriteLine((4 + 2) * 3); //Now the inner parentheses will process first (4+2), times 3 to get 18.
+            //Console.WriteLine(5 / 2); //We would expect 2.5 normally, but in C#, when only integer values are provided, an integer is returned.  Returns 2.
+            //Console.WriteLine(5 / 2.0); //2.0 is considered a double.  This returns 2.5.
 
-            int num = 6;
-            num++; //increments by one.  Can decrement by one with num--;
-            Console.WriteLine(num);
-            Console.WriteLine(Math.Abs(-40)); //Returns the absolute value of the provided value (in this case, 40).
-            Console.WriteLine(Math.Pow(3, 2)); //Returns the first number taken to the power of the second number.
-            Console.WriteLine(Math.Sqrt(36)); //Returns the square root
-            Console.WriteLine(Math.Max(4, 92)); //Returns the largest of the two numbers provided in the parameters
-            Console.WriteLine(Math.Min(4, 92)); //Returns the smallest of the two numbers provided in the parameters
-            Console.WriteLine(Math.Round(4.32)); //Returns the number rounded to the nearest integer
+            //int num = 6;
+            //num++; //increments by one.  Can decrement by one with num--;
+            //Console.WriteLine(num);
+            //Console.WriteLine(Math.Abs(-40)); //Returns the absolute value of the provided value (in this case, 40).
+            //Console.WriteLine(Math.Pow(3, 2)); //Returns the first number taken to the power of the second number.
+            //Console.WriteLine(Math.Sqrt(36)); //Returns the square root
+            //Console.WriteLine(Math.Max(4, 92)); //Returns the largest of the two numbers provided in the parameters
+            //Console.WriteLine(Math.Min(4, 92)); //Returns the smallest of the two numbers provided in the parameters
+            //Console.WriteLine(Math.Round(4.32)); //Returns the number rounded to the nearest integer
 
-            Console.ReadLine();
+
+
+            //GETTING USER INPUT
+
+            //Console.WriteLine() writes out a line of text, then moves onto the next line.
+            //Console.Write() does not go to a new line, but stays on the same one.
+
+            Console.Write("Enter your name: "); //prompt for the user
+            string name = Console.ReadLine(); //pauses the program and allows the user to enter a line of text.  Stores value into a string variable called name.
+            Console.Write("Enter your age: "); //display message and variable to the user
+            string age = Console.ReadLine();
+            Console.WriteLine("Hello " + name + ", you are " + age + "."); //displays message and variables to the user
+
+            Console.ReadLine(); //essentially pauses the program
         }
     }
 }
