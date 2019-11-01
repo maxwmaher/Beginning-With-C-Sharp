@@ -10,6 +10,7 @@ namespace BeginningCSharp
             Console.WriteLine("  / |");
             Console.WriteLine(" /  |");
             Console.WriteLine("/___|");
+            Console.WriteLine("Triangle");
 
             Console.ReadLine();
         }
