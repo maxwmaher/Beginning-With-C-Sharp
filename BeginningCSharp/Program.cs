@@ -78,11 +78,25 @@ namespace BeginningCSharp
             //Console.WriteLine() writes out a line of text, then moves onto the next line.
             //Console.Write() does not go to a new line, but stays on the same one.
 
-            Console.Write("Enter your name: "); //prompt for the user
-            string name = Console.ReadLine(); //pauses the program and allows the user to enter a line of text.  Stores value into a string variable called name.
-            Console.Write("Enter your age: "); //display message and variable to the user
-            string age = Console.ReadLine();
-            Console.WriteLine("Hello " + name + ", you are " + age + "."); //displays message and variables to the user
+            //Console.Write("Enter your name: "); //prompt for the user
+            //string name = Console.ReadLine(); //pauses the program and allows the user to enter a line of text.  Stores value into a string variable called name.
+            //Console.Write("Enter your age: "); //display message and variable to the user
+            //string age = Console.ReadLine();
+            //Console.WriteLine("Hello " + name + ", you are " + age + "."); //displays message and variables to the user
+
+
+
+            //BUILDING A CALCULATOR
+
+            int num = Convert.ToInt32("45");
+            Console.WriteLine(num + 6); //returns 51
+            Console.WriteLine("43" + "56"); //concatenates the values, returns 4356
+
+            Console.Write("Enter a first number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a second number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(num1 + num2);
 
             Console.ReadLine(); //essentially pauses the program
         }
