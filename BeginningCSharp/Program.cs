@@ -123,16 +123,32 @@ namespace BeginningCSharp
 
             //Arrays get declared with a type.  All elements within the array must be of the same type.
 
-            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
-            string[] friends = new string[5]; //indicates this friends array can hold up to five values
-            friends[0] = "Alex";
-            friends[1] = "Ariel";
+            //int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+            //string[] friends = new string[5]; //indicates this friends array can hold up to five values
+            //friends[0] = "Alex";
+            //friends[1] = "Ariel";
 
-            luckyNumbers[1] = 900;
+            //luckyNumbers[1] = 900;
 
-            Console.WriteLine(luckyNumbers[1]);
+            //Console.WriteLine(luckyNumbers[1]);
 
+
+
+            //METHODS
+
+
+            SayHi("Max", 31);
+            SayHi("Chris", 32);
+            SayHi("Melee", 11);
             Console.ReadLine(); //essentially pauses the program
+        }
+
+        //new methods are declared with static
+        //void indicates the method is not returning anything
+
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("Hello " + name + ", you are " + age + ".");
         }
     }
 }
