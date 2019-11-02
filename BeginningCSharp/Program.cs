@@ -171,21 +171,49 @@ namespace BeginningCSharp
 
             //IF STATEMENTS
 
-            bool isHappy = true;
-            bool isTall = false;
+            //    bool isHappy = true;
+            //    bool isTall = false;
 
-            if (isHappy && isTall)  // Like JavaScript, || means or, && means and
-            {
-                Console.WriteLine("You are happy and tall!");
-            } else if (isHappy && !isTall) {
-                Console.WriteLine("You are short, but happy!");
-            } else if (!isHappy && isTall) {
-                Console.WriteLine("You are not happy, but you are tall!");
-            } else {
-                Console.WriteLine("You are neither happy nor tall!");
-            }
+            //    if (isHappy && isTall)  // Like JavaScript, || means or, && means and
+            //    {
+            //        Console.WriteLine("You are happy and tall!");
+            //    } else if (isHappy && !isTall) {
+            //        Console.WriteLine("You are short, but happy!");
+            //    } else if (!isHappy && isTall) {
+            //        Console.WriteLine("You are not happy, but you are tall!");
+            //    } else {
+            //        Console.WriteLine("You are neither happy nor tall!");
+            //    }
+
+            //    Console.ReadLine();
+            //}
+
+
+
+
+            //MORE IF STATEMENTS
+
+            Console.WriteLine(GetMax(20, 10, 40));
 
             Console.ReadLine();
+        }
+
+        static int GetMax(int num1, int num2, int num3)
+        {
+            int result;
+
+            if (num1 >= num2 && num1 >= num3)
+            {
+                result = num1;
+            } else if (num2 >= num1 && num2 >= num3)
+            {
+                result = num2;
+            } else
+            {
+                result = num3;
+            }
+
+            return result;
         }
     }
 }
