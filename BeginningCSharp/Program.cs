@@ -253,44 +253,70 @@ namespace BeginningCSharp
 
             //Convert numbers to days of the week.  0 is Sunday, 1 is Monday, 2 is Tuesday, etc.
 
-            Console.WriteLine(GetDay(3));
+            //    Console.WriteLine(GetDay(3));
 
-            Console.ReadLine();
-        }
+            //    Console.ReadLine();
+            //}
 
-        static string GetDay(int dayNum)
-        {
-            string dayName;
+            //static string GetDay(int dayNum)
+            //{
+            //    string dayName;
 
-            switch (dayNum)
+            //    switch (dayNum)
+            //    {
+            //        case 0:
+            //            dayName = "Sunday";
+            //            break;
+            //        case 1:
+            //            dayName = "Monday";
+            //            break;
+            //        case 2:
+            //            dayName = "Tuesday";
+            //            break;
+            //        case 3:
+            //            dayName = "Wednesday";
+            //            break;
+            //        case 4:
+            //            dayName = "Thursday";
+            //            break;
+            //        case 5:
+            //            dayName = "Friday";
+            //            break;
+            //        case 6:
+            //            dayName = "Saturday";
+            //            break;
+            //        default:
+            //            dayName = "Invalid entry";
+            //            break;
+            //    }
+
+            //    return dayName;
+            //}
+
+
+
+            //WHILE LOOPS
+
+            int number = 1;
+            //Block of code to run while the condition provided is true
+            while (number <= 5)
             {
-                case 0:
-                    dayName = "Sunday";
-                    break;
-                case 1:
-                    dayName = "Monday";
-                    break;
-                case 2:
-                    dayName = "Tuesday";
-                    break;
-                case 3:
-                    dayName = "Wednesday";
-                    break;
-                case 4:
-                    dayName = "Thursday";
-                    break;
-                case 5:
-                    dayName = "Friday";
-                    break;
-                case 6:
-                    dayName = "Saturday";
-                    break;
-                default:
-                    dayName = "Invalid entry";
-                    break;
+                Console.WriteLine(number);
+                number++;
             }
 
-            return dayName;
+            //DO WHILE LOOP
+
+            //This type of loop executes the code provided prior to checking the condition
+            int index = 6;
+            do
+            {
+                Console.WriteLine(index);
+                index++;
+            } while (index <= 5);
+
+
+                Console.ReadLine();
         }
     }
 }
