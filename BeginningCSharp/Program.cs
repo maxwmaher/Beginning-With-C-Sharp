@@ -102,21 +102,35 @@ namespace BeginningCSharp
 
             //BUILDING A MAD LIBS GAME
 
-            string color, pluralNoun, celebrity;
+            //string color, pluralNoun, celebrity;
 
-            Console.Write("Enter a color: ");
-            color = Console.ReadLine(); //pause the program, save the value the user enters to this variable
+            //Console.Write("Enter a color: ");
+            //color = Console.ReadLine(); //pause the program, save the value the user enters to this variable
 
-            Console.Write("Enter a plural noun: ");
-            pluralNoun = Console.ReadLine(); //pause the program, save the value the user enters to this variable
+            //Console.Write("Enter a plural noun: ");
+            //pluralNoun = Console.ReadLine(); //pause the program, save the value the user enters to this variable
 
-            Console.Write("Enter a celebrity: ");
-            celebrity = Console.ReadLine(); //pause the program, save the value the user enters to this variable
+            //Console.Write("Enter a celebrity: ");
+            //celebrity = Console.ReadLine(); //pause the program, save the value the user enters to this variable
 
-            Console.WriteLine("Roses are " + color + ".");
-            Console.WriteLine(pluralNoun + " are blue.");
-            Console.WriteLine("I love " + celebrity + ".");
+            //Console.WriteLine("Roses are " + color + ".");
+            //Console.WriteLine(pluralNoun + " are blue.");
+            //Console.WriteLine("I love " + celebrity + ".");
 
+
+
+            //ARRAYS
+
+            //Arrays get declared with a type.  All elements within the array must be of the same type.
+
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+            string[] friends = new string[5]; //indicates this friends array can hold up to five values
+            friends[0] = "Alex";
+            friends[1] = "Ariel";
+
+            luckyNumbers[1] = 900;
+
+            Console.WriteLine(luckyNumbers[1]);
 
             Console.ReadLine(); //essentially pauses the program
         }
