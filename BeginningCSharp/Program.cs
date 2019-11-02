@@ -88,15 +88,35 @@ namespace BeginningCSharp
 
             //BUILDING A CALCULATOR
 
-            int num = Convert.ToInt32("45");
-            Console.WriteLine(num + 6); //returns 51
-            Console.WriteLine("43" + "56"); //concatenates the values, returns 4356
+            //int num = Convert.ToInt32("45");
+            //Console.WriteLine(num + 6); //returns 51
+            //Console.WriteLine("43" + "56"); //concatenates the values, returns 4356
 
-            Console.Write("Enter a first number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter a second number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(num1 + num2);
+            //Console.Write("Enter a first number: ");
+            //double num1 = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter a second number: ");
+            //double num2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine(num1 + num2);
+
+
+
+            //BUILDING A MAD LIBS GAME
+
+            string color, pluralNoun, celebrity;
+
+            Console.Write("Enter a color: ");
+            color = Console.ReadLine(); //pause the program, save the value the user enters to this variable
+
+            Console.Write("Enter a plural noun: ");
+            pluralNoun = Console.ReadLine(); //pause the program, save the value the user enters to this variable
+
+            Console.Write("Enter a celebrity: ");
+            celebrity = Console.ReadLine(); //pause the program, save the value the user enters to this variable
+
+            Console.WriteLine("Roses are " + color + ".");
+            Console.WriteLine(pluralNoun + " are blue.");
+            Console.WriteLine("I love " + celebrity + ".");
+
 
             Console.ReadLine(); //essentially pauses the program
         }
