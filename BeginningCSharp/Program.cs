@@ -152,18 +152,40 @@ namespace BeginningCSharp
             //}
 
 
+
             //RETURN STATEMENT
 
-            int cubedNumber = cube(5);
-            Console.WriteLine(cubedNumber);
+            //    int cubedNumber = cube(5);
+            //    Console.WriteLine(cubedNumber);
 
-            Console.ReadLine(); 
-        }
+            //    Console.ReadLine(); 
+            //}
 
-        static int cube(int num)
-        {
-            int result = num * num * num;
-            return result; //return piece of information back to the caller
+            //static int cube(int num)
+            //{
+            //    int result = num * num * num;
+            //    return result; //return piece of information back to the caller
+            //}
+
+
+
+            //IF STATEMENTS
+
+            bool isHappy = true;
+            bool isTall = false;
+
+            if (isHappy && isTall)  // Like JavaScript, || means or, && means and
+            {
+                Console.WriteLine("You are happy and tall!");
+            } else if (isHappy && !isTall) {
+                Console.WriteLine("You are short, but happy!");
+            } else if (!isHappy && isTall) {
+                Console.WriteLine("You are not happy, but you are tall!");
+            } else {
+                Console.WriteLine("You are neither happy nor tall!");
+            }
+
+            Console.ReadLine();
         }
     }
 }
