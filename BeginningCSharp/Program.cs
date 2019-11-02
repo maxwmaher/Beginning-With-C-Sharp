@@ -137,18 +137,33 @@ namespace BeginningCSharp
             //METHODS
 
 
-            SayHi("Max", 31);
-            SayHi("Chris", 32);
-            SayHi("Melee", 11);
-            Console.ReadLine(); //essentially pauses the program
+            //    SayHi("Max", 31);
+            //    SayHi("Chris", 32);
+            //    SayHi("Melee", 11);
+            //    Console.ReadLine(); //essentially pauses the program
+            //}
+
+            ////new methods are declared with static
+            ////void indicates the method is not returning anything
+
+            //static void SayHi(string name, int age)
+            //{
+            //    Console.WriteLine("Hello " + name + ", you are " + age + ".");
+            //}
+
+
+            //RETURN STATEMENT
+
+            int cubedNumber = cube(5);
+            Console.WriteLine(cubedNumber);
+
+            Console.ReadLine(); 
         }
 
-        //new methods are declared with static
-        //void indicates the method is not returning anything
-
-        static void SayHi(string name, int age)
+        static int cube(int num)
         {
-            Console.WriteLine("Hello " + name + ", you are " + age + ".");
+            int result = num * num * num;
+            return result; //return piece of information back to the caller
         }
     }
 }
