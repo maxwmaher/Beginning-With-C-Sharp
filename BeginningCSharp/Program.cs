@@ -384,13 +384,58 @@ namespace BeginningCSharp
 
             //Where each element in an array has its own array, like a matrix
 
-            int[,] numberGrid = { //the comma tells C# we want a 2D array
-                {1, 2},
-                {3, 4},
-                {5, 6},
-            };
+            //int[,] numberGrid = { //the comma tells C# we want a 2D array.  Add another comma for 3D array, and more commas as needed.
+            //    {1, 2},
+            //    {3, 4},
+            //    {5, 6},
+            //};
+            //int[,] myArray = new int[2, 3]; //another way to declare this.  There are two elements, and each of those elements has three of its own elements
 
-            Console.WriteLine(numberGrid[2, 1]); //enter what Row number (beginning at 0), then what Column number (beginning at 0) you wish to access.  Example: 2, 1 means number 6 would print.
+            //Console.WriteLine(numberGrid[2, 1]); //enter what Row number (beginning at 0), then what Column number (beginning at 0) you wish to access.  Example: 2, 1 means number 6 would print.
+
+
+
+            //COMMENTS
+
+            //Comments work in C# just like they work in JavaScript.
+
+            /*
+             Example
+             of
+             a
+             multi-line
+             comment.
+             */
+
+            //Console.WriteLine("Comments are fun!");
+
+
+
+            //EXCEPTION HANDLING
+
+            //Exceptions come up when there are parts of the code that C# is unable to handle
+
+            //Example - run the code below and try to divide 5 by 0.  Exceptions occur when we do not have the catch block.
+
+            try
+            {
+                Console.Write("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(num1 / num2);
+            }
+            catch(Exception e) //Declares e as a variable that contains the exception message from the system.  This catches any type of exception.  Usually is better practice to capture the specific exceptions.
+            //catch(DivideByZeroException e) <-- this would catch only Divide By Zero exceptions
+            //catch(FormatException e) <-- this would catch only Format exceptions
+            {
+                Console.WriteLine(e.Message);  //The system will tell the user what went wrong.
+            }
+            finally
+            {
+                Console.WriteLine("Thanks for using this application!");
+            }
 
             Console.ReadLine();
         }
