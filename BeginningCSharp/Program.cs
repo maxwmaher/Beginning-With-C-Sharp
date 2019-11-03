@@ -352,13 +352,31 @@ namespace BeginningCSharp
 
             //FOR LOOPS
 
-            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
-            for (int i = 0; i < luckyNumbers.Length; i++)
+            //int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+            //for (int i = 0; i < luckyNumbers.Length; i++)
+            //{
+            //    Console.WriteLine(luckyNumbers[i]);
+            //}
+
+
+
+            //BUILDING AN EXPONENT METHOD
+
+            //Provide two numbers (a base number and a power number)
+            Console.WriteLine(GetPow(4, 3));
+            Console.ReadLine();
+        }
+
+        static int GetPow(int baseNum, int powNum)
+        {
+            int result = 1;
+
+            for (int i = 0; i < powNum; i++)
             {
-                Console.WriteLine(luckyNumbers[i]);
+                result = result * baseNum;
             }
 
-            Console.ReadLine();
+            return result;
         }
     }
 }
