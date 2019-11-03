@@ -297,26 +297,58 @@ namespace BeginningCSharp
 
             //WHILE LOOPS
 
-            int number = 1;
-            //Block of code to run while the condition provided is true
-            while (number <= 5)
+            //int number = 1;
+            ////Block of code to run while the condition provided is true
+            //while (number <= 5)
+            //{
+            //    Console.WriteLine(number);
+            //    number++;
+            //}
+
+            ////DO WHILE LOOP
+
+            ////This type of loop executes the code provided prior to checking the condition
+            //int index = 6;
+            //do
+            //{
+            //    Console.WriteLine(index);
+            //    index++;
+            //} while (index <= 5);
+
+
+
+            //BUILDING A GUESSING GAME
+
+            string secretWord = "giraffe";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
+
+            while(guess != secretWord && !outOfGuesses)
             {
-                Console.WriteLine(number);
-                number++;
+                if (guessCount < guessLimit)
+                {
+                    Console.Write("Enter guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
+                
+            }
+            if (outOfGuesses)
+            {
+                Console.Write("You lose!");
+            }
+            else
+            {
+                Console.Write("You win!");
             }
 
-            //DO WHILE LOOP
-
-            //This type of loop executes the code provided prior to checking the condition
-            int index = 6;
-            do
-            {
-                Console.WriteLine(index);
-                index++;
-            } while (index <= 5);
-
-
-                Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }
