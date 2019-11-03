@@ -363,20 +363,36 @@ namespace BeginningCSharp
             //BUILDING AN EXPONENT METHOD
 
             //Provide two numbers (a base number and a power number)
-            Console.WriteLine(GetPow(4, 3));
+            //    Console.WriteLine(GetPow(4, 3));
+            //    Console.ReadLine();
+            //}
+
+            //static int GetPow(int baseNum, int powNum)
+            //{
+            //    int result = 1;
+
+            //    for (int i = 0; i < powNum; i++)
+            //    {
+            //        result = result * baseNum;
+            //    }
+
+            //    return result;
+
+
+
+            //2D ARRAYS
+
+            //Where each element in an array has its own array, like a matrix
+
+            int[,] numberGrid = { //the comma tells C# we want a 2D array
+                {1, 2},
+                {3, 4},
+                {5, 6},
+            };
+
+            Console.WriteLine(numberGrid[2, 1]); //enter what Row number (beginning at 0), then what Column number (beginning at 0) you wish to access.  Example: 2, 1 means number 6 would print.
+
             Console.ReadLine();
-        }
-
-        static int GetPow(int baseNum, int powNum)
-        {
-            int result = 1;
-
-            for (int i = 0; i < powNum; i++)
-            {
-                result = result * baseNum;
-            }
-
-            return result;
         }
     }
 }
