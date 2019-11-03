@@ -417,25 +417,51 @@ namespace BeginningCSharp
 
             //Example - run the code below and try to divide 5 by 0.  Exceptions occur when we do not have the catch block.
 
-            try
-            {
-                Console.Write("Enter a number: ");
-                int num1 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter another number: ");
-                int num2 = Convert.ToInt32(Console.ReadLine());
+            //try
+            //{
+            //    Console.Write("Enter a number: ");
+            //    int num1 = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("Enter another number: ");
+            //    int num2 = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine(num1 / num2);
-            }
-            catch(Exception e) //Declares e as a variable that contains the exception message from the system.  This catches any type of exception.  Usually is better practice to capture the specific exceptions.
-            //catch(DivideByZeroException e) <-- this would catch only Divide By Zero exceptions
-            //catch(FormatException e) <-- this would catch only Format exceptions
-            {
-                Console.WriteLine(e.Message);  //The system will tell the user what went wrong.
-            }
-            finally
-            {
-                Console.WriteLine("Thanks for using this application!");
-            }
+            //    Console.WriteLine(num1 / num2);
+            //}
+            //catch(Exception e) //Declares e as a variable that contains the exception message from the system.  This catches any type of exception.  Usually is better practice to capture the specific exceptions.
+            ////catch(DivideByZeroException e) <-- this would catch only Divide By Zero exceptions
+            ////catch(FormatException e) <-- this would catch only Format exceptions
+            //{
+            //    Console.WriteLine(e.Message);  //The system will tell the user what went wrong.
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Thanks for using this application!");
+            //}
+
+
+
+            //CLASSES & OBJECTS
+
+            //Class is a specification for a new data type
+            //Classes are used to model real-world entities inside of our programs
+            //Objects are instances of a class
+
+            Book book1 = new Book(); //creating an instance of a book
+            book1.title = "Harry Potter and the Sorcerer's Stone";
+            book1.author = "J.K. Rowling";
+            book1.numberOfPages = 309;
+
+            Book book2 = new Book(); //creating an instance of a book
+            book2.title = "Carrie";
+            book2.author = "Stephen King";
+            book2.numberOfPages = 199;
+
+            Console.WriteLine(book1.title);
+            Console.WriteLine(book1.author);
+            Console.WriteLine(book1.numberOfPages);
+
+            Console.WriteLine(book2.title);
+            Console.WriteLine(book2.author);
+            Console.WriteLine(book2.numberOfPages);
 
             Console.ReadLine();
         }
