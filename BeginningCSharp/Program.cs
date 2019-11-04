@@ -504,10 +504,18 @@ namespace BeginningCSharp
             //Special type of attribute in a class shared by all of the objects and instances of that class.
             //Contained on the class itself instead of the individual object of that class.
 
-            Song holiday = new Song("Holiday", "Green Day", 200);
-            Console.WriteLine(Song.songCount);
-            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
-            Console.WriteLine(kashmir.getSongCount());
+            //Song holiday = new Song("Holiday", "Green Day", 200);
+            //Console.WriteLine(Song.songCount);
+            //Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+            //Console.WriteLine(kashmir.getSongCount());
+
+
+
+            //STATIC METHODS & CLASSES
+
+            //Static methods are methods that belong to the classes themselves
+
+            UsefulTools.SayHi("Max");
 
             Console.ReadLine();
         }
