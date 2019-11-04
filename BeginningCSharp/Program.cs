@@ -469,14 +469,25 @@ namespace BeginningCSharp
 
             //Special method that can go into a C# class that will get called whenever we create an object of that class
 
-            Book book1 = new Book("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", 309); //creating the book through the constructor
+            //Book book1 = new Book("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", 309); //creating the book through the constructor
 
-            Book book2 = new Book("Carrie", "Stephen King", 199); //creating the book through the constructor
+            //Book book2 = new Book("Carrie", "Stephen King", 199); //creating the book through the constructor
 
-            Console.WriteLine(book1.numberOfPages);
-            Console.WriteLine(book2.title);
+            //Console.WriteLine(book1.numberOfPages);
+            //Console.WriteLine(book2.title);
+
+
+
+            //OBJECT METHODS
+
+            Student student1 = new Student("Jim", "Business", 2.8);
+            Student student2 = new Student("Pam", "Art", 3.6);
+
+            Console.WriteLine(student1.HasHonors());
+            Console.WriteLine(student2.HasHonors());
 
             Console.ReadLine();
+
         }
     }
 }
