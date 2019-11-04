@@ -477,7 +477,7 @@ namespace BeginningCSharp
             //Console.WriteLine(book2.title);
 
 
-            
+
             //OBJECT METHODS
 
             //Student student1 = new Student("Jim", "Business", 2.8);
@@ -490,12 +490,24 @@ namespace BeginningCSharp
 
             //GETTERS & SETTERS
 
-            Movie avengers = new Movie("The Avengers", "Joss Whedon", "Dog");
-            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
-            //Valid Ratings - G, PG, PG-13, R, NR
+            //Movie avengers = new Movie("The Avengers", "Joss Whedon", "Dog");
+            //Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
+            ////Valid Ratings - G, PG, PG-13, R, NR
 
-            Console.WriteLine(avengers.Rating);
-            Console.WriteLine(shrek.Rating);
+            //Console.WriteLine(avengers.Rating);
+            //Console.WriteLine(shrek.Rating);
+
+
+
+            //STATIC CLASS ATTRIBUTES
+
+            //Special type of attribute in a class shared by all of the objects and instances of that class.
+            //Contained on the class itself instead of the individual object of that class.
+
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            Console.WriteLine(Song.songCount);
+            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+            Console.WriteLine(kashmir.getSongCount());
 
             Console.ReadLine();
         }
