@@ -445,23 +445,36 @@ namespace BeginningCSharp
             //Classes are used to model real-world entities inside of our programs
             //Objects are instances of a class
 
-            Book book1 = new Book(); //creating an instance of a book
-            book1.title = "Harry Potter and the Sorcerer's Stone";
-            book1.author = "J.K. Rowling";
-            book1.numberOfPages = 309;
+            //Book book1 = new Book(); //creating an instance of a book
+            //book1.title = "Harry Potter and the Sorcerer's Stone";
+            //book1.author = "J.K. Rowling";
+            //book1.numberOfPages = 309;
 
-            Book book2 = new Book(); //creating an instance of a book
-            book2.title = "Carrie";
-            book2.author = "Stephen King";
-            book2.numberOfPages = 199;
+            //Book book2 = new Book(); //creating an instance of a book
+            //book2.title = "Carrie";
+            //book2.author = "Stephen King";
+            //book2.numberOfPages = 199;
 
-            Console.WriteLine(book1.title);
-            Console.WriteLine(book1.author);
+            //Console.WriteLine(book1.title);
+            //Console.WriteLine(book1.author);
+            //Console.WriteLine(book1.numberOfPages);
+
+            //Console.WriteLine(book2.title);
+            //Console.WriteLine(book2.author);
+            //Console.WriteLine(book2.numberOfPages);
+
+
+
+            //CONSTRUCTORS
+
+            //Special method that can go into a C# class that will get called whenever we create an object of that class
+
+            Book book1 = new Book("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", 309); //creating the book through the constructor
+
+            Book book2 = new Book("Carrie", "Stephen King", 199); //creating the book through the constructor
+
             Console.WriteLine(book1.numberOfPages);
-
             Console.WriteLine(book2.title);
-            Console.WriteLine(book2.author);
-            Console.WriteLine(book2.numberOfPages);
 
             Console.ReadLine();
         }
