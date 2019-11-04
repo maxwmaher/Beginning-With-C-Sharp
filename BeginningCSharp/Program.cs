@@ -515,7 +515,22 @@ namespace BeginningCSharp
 
             //Static methods are methods that belong to the classes themselves
 
-            UsefulTools.SayHi("Max");
+            //UsefulTools.SayHi("Max");
+
+
+
+            //INHERITANCE
+
+            //One class can inherit all the functionality of another class
+
+            //Chef is the SuperClass
+            Chef chef = new Chef(); //creating an object of the Chef class
+            chef.MakeChicken();
+
+            //Italian Chef is the SubClass
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakePasta();
+            italianChef.MakeSpecialDish();
 
             Console.ReadLine();
         }
